@@ -28,9 +28,9 @@
                  });
                  $('.open-overlay').css('pointer-events', 'auto');
                }
-             })
+             });
            }
-         })
+         });
 
        } else {
          $('.open-overlay').css('pointer-events', 'none');
@@ -56,6 +56,6 @@
                }
              });
            }
-         })
+         });
        }
-     })
+     });
