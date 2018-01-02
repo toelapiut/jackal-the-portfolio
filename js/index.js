@@ -59,3 +59,25 @@
          });
        }
      });
+
+// Animation for the wiggling projects
+$(function(){
+  setInterval(function(){
+    
+      projectsTada();
+    
+  },4000);
+});
+ function projectsTada(){
+   var randnum=Math.floor(Math.random() * $('img').length)+1;
+  $("img").eq(randnum).addClass('is-emph').siblings().removeClass('is-emph');
+ }
+
+ //scroll effect
+ $(window).scroll(function(){
+   startArticles();
+ });
+
+ function startArticles(){
+   var wscroll=$(window).scrollTop();
+ }
