@@ -13,18 +13,18 @@
          bottom_bar.removeClass('animate-out-bottom-bar').addClass('animate-bottom-bar');
          overlay_navigation.removeClass('overlay-slide-up').addClass('overlay-slide-down')
          overlay_navigation.velocity('transition.slideLeftIn', {
-           duration: 300,
+           duration: 50,
            delay: 0,
            begin: function() {
              $('nav ul li').velocity('transition.perspectiveLeftIn', {
-               stagger: 150,
+               stagger: 0,
                delay: 0,
                complete: function() {
                  $('nav ul li a').velocity({
                    opacity: [1, 0],
                  }, {
-                   delay: 10,
-                   duration: 140
+                   delay: 3,
+                   duration: 40
                  });
                  $('.open-overlay').css('pointer-events', 'auto');
                }
@@ -39,18 +39,18 @@
          bottom_bar.removeClass('animate-bottom-bar').addClass('animate-out-bottom-bar');
          overlay_navigation.removeClass('overlay-slide-down').addClass('overlay-slide-up')
          $('nav ul li').velocity('transition.perspectiveRightOut', {
-           stagger: 150,
+           stagger: 80,
            delay: 0,
            complete: function() {
              overlay_navigation.velocity('transition.fadeOut', {
                delay: 0,
-               duration: 300,
+               duration: 100,
                complete: function() {
                  $('nav ul li a').velocity({
                    opacity: [0, 1],
                  }, {
                    delay: 0,
-                   duration: 50
+                   duration: 10
                  });
                  $('.open-overlay').css('pointer-events', 'auto');
                }
@@ -60,18 +60,23 @@
        }
      });
 
-// Animation for the wiggling projects
-$(function(){
-  setInterval(function(){
-    
-     projectsTada();
 
-    
-  },1000);
-});
- function projectsTada(){
-   var randnum=Math.floor(Math.random() * $('img').length)+1;
-  $("img").eq(randnum).addClass('is-emph').siblings().removeClass('is-emph');
- }
+
+  // modal function
+
+  $(".modalbttn").click(function() {
+    $(".modalcontainer").fadeIn("slow");
+    $(".modal").fadeIn("slow");
+  });
+  
+  $(".close").click(function() {
+    $(".modalcontainer").fadeOut("slow");
+    $(".modal").fadeOut("slow");
+  });
+  
+  $(".buttons").click(function() {
+    $(".modalcontainer").fadeOut("slow");
+    $(".modal").fadeOut("slow");
+  });
 
 
