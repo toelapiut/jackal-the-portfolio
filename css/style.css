@@ -8,9 +8,11 @@ font-family: 'Advent Pro', sans-serif;
 font-family: 'Allura', cursive;
 font-family: 'Nixie One', cursive;
 font-family: 'Cormorant', serif; */
-html{
+
+html {
   margin-right: 15px;
 }
+
 body {
   background-color: #fff
 }
@@ -19,11 +21,13 @@ body {
 /* ====================================
 Navigation 
 ==================================== */
-a:hover{
+
+a:hover {
   text-decoration-color: white;
   text-decoration: none;
-  color:white;
+  color: white;
 }
+
 .overlay-navigation {
   position: fixed;
   z-index: 99;
@@ -527,7 +531,7 @@ Styles for icons
 }
 
 .social-btns {
-  padding:5% 5% 5%;
+  padding: 5% 5% 5%;
   height: 90px;
   margin: 0;
   font-size: 0;
@@ -747,14 +751,13 @@ button styles
   background-position: center center;
 }
 
-
-.color-skill{
-  background-color:rgb(226, 72, 157);
+.color-skill {
+  background-color: rgb(226, 72, 157);
   height: 100vh;
 }
 
-/* skill graphs */
 
+/* skill graphs */
 
 @import url(https://fonts.googleapis.com/css?family=Lato:100,400);
 @-webkit-keyframes load {
@@ -762,18 +765,21 @@ button styles
     stroke-dashoffset: 0;
   }
 }
+
 @keyframes load {
   0% {
     stroke-dashoffset: 0;
   }
 }
+
 .progress {
   position: relative;
   display: inline-block;
   padding: 0;
   text-align: center;
 }
-.progress > li {
+
+.progress>li {
   display: inline-block;
   position: relative;
   text-align: center;
@@ -782,14 +788,16 @@ button styles
   font-weight: 100;
   margin: 2rem;
 }
-.progress > li:before {
+
+.progress>li:before {
   content: attr(data-name);
   position: absolute;
   width: 100%;
   bottom: -2rem;
   font-weight: 400;
 }
-.progress > li:after {
+
+.progress>li:after {
   content: attr(data-percent);
   position: absolute;
   width: 100%;
@@ -798,17 +806,20 @@ button styles
   font-size: 2rem;
   text-align: center;
 }
+
 .progress svg {
   width: 10rem;
   height: 10rem;
 }
+
 .progress svg:nth-child(2) {
   position: absolute;
   left: 0;
   top: 0;
   -webkit-transform: rotate(-90deg);
-          transform: rotate(-90deg);
+  transform: rotate(-90deg);
 }
+
 .progress svg:nth-child(2) path {
   fill: none;
   stroke-width: 25;
@@ -816,28 +827,30 @@ button styles
   stroke: #fff;
   opacity: .9;
   -webkit-animation: load 10s;
-          animation: load 10s;
+  animation: load 10s;
 }
 
-.skill-wrapper{
-  text-align:center;
+.skill-wrapper {
+  text-align: center;
   padding: 30% 0% 30%;
 }
-.skills{
+
+.skills {
   position: absolute;
   top: 50%;
-  left:30%;
+  left: 30%;
 }
-img.img-responsive{
+
+img.img-responsive {
   height: 100vh;
 }
 
 @import "https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600";
-
 a {
   color: #FFF;
   text-decoration: none;
 }
+
 a:hover {
   text-decoration: none;
 }
@@ -862,7 +875,6 @@ p {
   filter: blur(5px);
 }
 
-
 .modalcontainer {
   display: none;
   position: absolute;
@@ -872,6 +884,7 @@ p {
   right: 0;
   background-color: rgba(0, 0, 0, 0.5);
 }
+
 .modalcontainer.active {
   display: block;
 }
@@ -891,12 +904,15 @@ p {
   -webkit-overflow-scrolling: touch;
   outline: 0;
 }
+
 .modal.active {
   display: block;
 }
+
 .modal .content {
   padding: 30px;
 }
+
 .modal .close {
   font-family: "Source Sans Pro", sans-serif;
   cursor: pointer;
@@ -910,10 +926,12 @@ p {
   color: #999;
   font-size: 40px;
 }
+
 .modal .close span {
   transform: rotate(45deg);
   display: block;
 }
+
 .modal .buttons {
   width: 600px;
   position: absolute;
@@ -921,6 +939,7 @@ p {
   height: 50px;
   background-color: #FFF;
 }
+
 .modal .buttons a {
   width: 50%;
   height: 50px;
@@ -933,14 +952,17 @@ p {
   text-transform: uppercase;
   font-weight: bold;
 }
+
 .modal .buttons a:hover {
   background-color: #e1e1e1;
 }
+
 .modal .buttons a:nth-of-type(2) {
   float: right;
   color: #FFF;
   background-color: #00c06d;
 }
+
 .modal .buttons a:nth-of-type(2):hover {
   background-color: #00a75f;
 }
@@ -952,4 +974,38 @@ p {
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   margin-top: 67%;
+}
+
+.instagram {
+  background-image: url("../assets/img/instamob.jpg");
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  height: 25vh;
+}
+.project{
+  background-image: url("../assets/img/project.jpg");
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 25vh;
+}
+.unsplash{
+  background-image: url("../assets/img/unsplamob.jpg");
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 25vh;
+}
+.ugatuzi{
+  background-image: url("../assets/img/ugamob.jpg");
+  background-size:100%;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 25vh;
+}
+
+.overlay {
+  opacity: 0.5;
+  filter: alpha( black opacity=50);
+  background-color: rgba(0, 0, 0, 0.5);
 }
