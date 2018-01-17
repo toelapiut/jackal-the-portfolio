@@ -60,8 +60,6 @@
        }
      });
 
-
-
   // modal function
 
   $(".modalbttn").click(function() {
