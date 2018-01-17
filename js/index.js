@@ -63,7 +63,7 @@
 
 
   // modal function
-
+//instagram model
   $(".modalbttn").click(function() {
     $(".modalcontainer").fadeIn("slow");
     $(".modal").fadeIn("slow");
@@ -78,6 +78,42 @@
     $(".modalcontainer").fadeOut("slow");
     $(".modal").fadeOut("slow");
   });
+
+
+  //Unsplash Model
+  $(".modalbn").click(function() {
+    $(".modalcontainer").fadeIn("slow");
+    $(".modal").fadeIn("slow");
+  });
+  
+  $(".close").click(function() {
+    $(".modalcontainer").fadeOut("slow");
+    $(".modal").fadeOut("slow");
+  });
+  
+  $(".buttons").click(function() {
+    $(".modalcontainer").fadeOut("slow");
+    $(".modal").fadeOut("slow");
+  });
+
+
+  // ugatuzi model
+  $(".modalbtn").click(function() {
+    $(".modalcontainerr").fadeIn("slow");
+    $(".modal").fadeIn("slow");
+  });
+  
+  $(".close").click(function() {
+    $(".modalcontainer").fadeOut("slow");
+    $(".modal").fadeOut("slow");
+  });
+  
+  $(".buttons").click(function() {
+    $(".modalcontainer").fadeOut("slow");
+    $(".modal").fadeOut("slow");
+  });
+
+
 
 
 // Home page Animations 
@@ -107,13 +143,13 @@ var resolver = {
         if (iterations >= 0) {
           var nextOptions = Object.assign({}, options, { iterations: iterations - 1 });
 
-          // Ensures partialString without the random character as the final state.
-          if (iterations === 0) {
-            element.textContent = partialString;
-          } else {
-            // Replaces the last character of partialString with a random character
-            element.textContent = partialString.substring(0, partialString.length - 1) + randomCharacter(characters);
-          }
+          // // Ensures partialString without the random character as the final state.
+          // if (iterations === 0) {
+          //   element.textContent = partialString;
+          // } else {
+          //   // Replaces the last character of partialString with a random character
+          //   element.textContent = partialString.substring(0, partialString.length - 1) + randomCharacter(characters);
+          // }
 
           doRandomiserEffect(nextOptions, callback);
         } else if (typeof callback === "function") {
