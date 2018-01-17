@@ -60,8 +60,6 @@
        }
      });
 
-
-
   // modal function
 //instagram model
   $(".modalbttn").click(function() {
