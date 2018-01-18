@@ -78,40 +78,6 @@
   });
 
 
-  //Unsplash Model
-  $(".modalbn").click(function() {
-    $(".modalcontainer").fadeIn("slow");
-    $(".modal").fadeIn("slow");
-  });
-  
-  $(".close").click(function() {
-    $(".modalcontainer").fadeOut("slow");
-    $(".modal").fadeOut("slow");
-  });
-  
-  $(".buttons").click(function() {
-    $(".modalcontainer").fadeOut("slow");
-    $(".modal").fadeOut("slow");
-  });
-
-
-  // ugatuzi model
-  $(".modalbtn").click(function() {
-    $(".modalcontainerr").fadeIn("slow");
-    $(".modal").fadeIn("slow");
-  });
-  
-  $(".close").click(function() {
-    $(".modalcontainer").fadeOut("slow");
-    $(".modal").fadeOut("slow");
-  });
-  
-  $(".buttons").click(function() {
-    $(".modalcontainer").fadeOut("slow");
-    $(".modal").fadeOut("slow");
-  });
-
-
 
 
 // Home page Animations 
@@ -141,13 +107,13 @@ var resolver = {
         if (iterations >= 0) {
           var nextOptions = Object.assign({}, options, { iterations: iterations - 1 });
 
-          // // Ensures partialString without the random character as the final state.
-          // if (iterations === 0) {
-          //   element.textContent = partialString;
-          // } else {
-          //   // Replaces the last character of partialString with a random character
-          //   element.textContent = partialString.substring(0, partialString.length - 1) + randomCharacter(characters);
-          // }
+          // Ensures partialString without the random character as the final state.
+          if (iterations === 0) {
+            element.textContent = partialString;
+          } else {
+            // Replaces the last character of partialString with a random character
+            element.textContent = partialString.substring(0, partialString.length - 1) + randomCharacter(characters);
+          }
 
           doRandomiserEffect(nextOptions, callback);
         } else if (typeof callback === "function") {
@@ -175,7 +141,7 @@ var resolver = {
     };
     doResolverEffect(combinedOptions, callback);
   }
-};var strings = ['Hello There, Are you alright ?', 'You know, being Caroline taught me a valuable lesson. I thought you were my greatest enemy. When all along you were my best friend.', 'The surge of emotion that shot through me when I saved your life taught me an even more valuable lesson: where Caroline lives in my brain.', 'Goodbye, Caroline.', 'You know, deleting Caroline just now taught me a valuable lesson. The best solution to a problem is usually the easiest one. And I\'ll be honest.', 'Killing you? Is hard.', 'You know what my days used to be like? I just tested. Nobody murdered me. Or put me in a potato. Or fed me to birds. I had a pretty good life.', 'And then you showed up. You dangerous, mute lunatic. So you know what?', 'You win.', 'Just go.', 'It\'s been fun. Don\'t come back.', '......'];
+};var strings = ['Hello There, Are you alright ?','    ...', 'You know, being Caroline taught me a valuable lesson. I thought you were my greatest enemy. When all along you were my best friend.', 'The surge of emotion that shot through me when I saved your life taught me an even more valuable lesson: where Caroline lives in my brain.', 'Goodbye, Caroline.', 'You know, deleting Caroline just now taught me a valuable lesson. The best solution to a problem is usually the easiest one. And I\'ll be honest.', 'Killing you? Is hard.', 'You know what my days used to be like? I just tested. Nobody murdered me. Or put me in a potato. Or fed me to birds. I had a pretty good life.', 'And then you showed up. You dangerous, mute lunatic. So you know what?', 'You win.', 'Just go.', 'It\'s been fun. Don\'t come back.', '......'];
 
 var counter = 0;
 
