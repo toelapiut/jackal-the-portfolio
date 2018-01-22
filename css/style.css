@@ -607,7 +607,7 @@ p.intro {
   width: 100%;
   height: 100vh;
   position: relative;
-  background-image: url(https://images.unsplash.com/photo-1501883590538-958e09295331?auto=format&fit=crop&w=1350&q=80);
+  background-image: url("./../assets/img/apiut.jpg");
   background-size: cover;
   background-attachment: fixed;
   background-position: center center;
